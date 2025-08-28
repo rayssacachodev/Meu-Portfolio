@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título exibido na aba do navegador:-->
+    <title>Portfólio de Rayssa Cacho</title>
+    <!--Link para o arquivo css:-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!--Cabeçalho da página com menu de neavegação:-->
+   <header>
+      <!--Navegação principal do site com links que apontam para seções internas da página:-->
+      <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+   </header>
+
+   <!--Conteúdo principal da página:-->
+   <main>
+      <!--Seção de apresentação pessoal:-->
+     <section id="sobre">
+        <h1 class="fade-in">Sobre Mim</h1>
+        <p class="fade-in">Olá, bem-vindo ao meu site! Meu nome é Rayssa Cacho, tenho 20 anos e sou brasileira. Sou apaixonada por livros de fantasia e romance. Meu livro favorito é a Corte de Espinhos e Rosas. Meu objetivo atualmente é criar uma ferramenta, talvez com I.A., que misture minha paixão e meu novo interesse: Livros e Programação.</p>
+
+        <!--Galeria de imagens sobre a minha personalide:-->
+        <div class="fotos-sobre">
+          <img class="fade-in" src="imagens/code.logo.jpg" alt="Foto de Código, programação">
+          <img class="fade-in" src="imagens/eu.logo.jpg" alt="Foto de Garota Sombreada">
+          <img class="fade-in" src="imagens/livro.logo.jpg" alt="Foto de Livro">
+        </div>
+     </section>
+
+     <!--Seção da minha formação acadêmica e idiomas:-->
+     <section id="formacao">
+        <h1 class="fade-in">Formação</h1>
+        <p class="fade-in">Sou caloura em Engenharia de Software no Centro Universitário Internacional UNINTER, com previsão de conclusão em 2028.</p>
+        <p class="fade-in">Sou fluente em português e tenho nível intermediário em inglês.</p>
+
+        <!--Logo da minha faculdade:-->
+        <div class="foto-formacao">
+          <img class="fade-in" src="imagens/uninter.logo.png" alt="UNINTER Logo">
+        </div>
+     </section>
+
+     <!--Seção do meu portfólio com links paraos meus projetos hospedados no GitHub:-->
+     <section id="portfolio">
+      <h1 class="fade-in">Portfólio</h1>
+      <ul class="fade-in">
+         <li><a href="https://github.com/rayssacachodev/Meu-Portfolio/tree/551129d49f9f0b570d11450efcaf3ae92c6d922c/Calculadora%20Python" target="_blank">Calculadora em Python</a></li>
+         <li><a href="https://github.com/rayssacachodev/Meu-Portfolio/tree/551129d49f9f0b570d11450efcaf3ae92c6d922c/Mini%20Sistema%20de%20Compras%20Python" target="_blank">Mini Sistema de Compras em Python</a></li>
+         <li><a href="https://github.com/rayssacachodev/Meu-Portfolio/tree/551129d49f9f0b570d11450efcaf3ae92c6d922c/Banco%20de%20Dados%20Locadora%20de%20Carros%20MySql" target="_blank">Banco de Dados de Locadora de Carros SQL</a></li>
+      </ul>
+
+      <!--Logos das linguagens/tecnologias utilizadas no meu portfólio:-->
+      <div class="fotos-portfolio">
+         <img class="fade-in" src="imagens/python.logo.png" alt="Python Logo">
+         <img class="fade-in" src="imagens/mysql.logo.png" alt="MySQL Logo">
+      </div>
+     </section>
+
+     <!--Seção de com formulário simples de contato com nome, email e mensagem:-->
+     <section id="contato">
+      <h1 class="fade-in">Contato</h1>
+      <form class="fade-in">
+         <label for="nome">Nome:</label>
+         <input type="text" 
+         id="nome" 
+         name="nome" 
+         required>
+
+         <label for="email">Email:</label>
+         <input type="email"
+         id="email"
+         name="email"
+         required>
+
+         <label for="mensagem">Mensagem:</label>
+         <textarea id="mensagem"
+         name="mensagem"
+         rows="10"
+         required></textarea>
+
+         <!--Botão para enviar o formulário:-->
+         <button type="submit">Enviar</button>
+      </form>
+     </section>
+
+   </main>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
